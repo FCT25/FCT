@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Code Technology</title>
+    <link rel="icon" type="image/png" href="Logo Future Code Tech.PNG">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #252839;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #474a5e;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6a6e8b;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.8)), url('https://images.unsplash.com/photo-1620288636402-990a48a04b19?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gradient-text {
+            background-image: linear-gradient(45deg, #a78bfa, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-bg {
+            background: #1f2937;
+        }
+
+        .contact-form-bg {
+            background: #1f2937;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+            margin-top: 8px;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-300">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-gray-900/80 backdrop-blur-sm shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="#home" class="text-xl font-bold text-white flex items-center">
+                    <img src="Logo Future Code Tech.PNG" alt="Future Code Technology Logo" class="h-10 w-auto rounded-full mr-2">
+                    <span class="hidden sm:inline">Future Code Technology</span>
+                </a>
+            </div>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#home" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">Home</a>
+                <a href="#about" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">About Us</a>
+                <a href="#services" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">Services</a>
+                <a href="#offers" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">Offers</a>
+                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 py-4 px-6 text-center shadow-lg">
+            <a href="#home" class="block py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">Home</a>
+            <a href="#about" class="block py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">About Us</a>
+            <a href="#services" class="block py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">Services</a>
+            <a href="#offers" class="block py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-full transition duration-300">Offers</a>
+            <a href="#contact" class="block py-2 mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-full transition duration-300">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center text-white relative">
+            <div class="container mx-auto px-6 py-24">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+                    <span class="gradient-text">Future Code Technology</span>
+                </h1>
+                <p class="text-lg md:text-2xl font-medium mb-8 max-w-2xl mx-auto">
+                    Your trusted partner in digital transformation and building your business future online.
+                </p>
+                <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105">
+                    Get a Free Consultation
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 section-title mx-auto">About Us</h2>
+                    <p class="text-lg text-gray-400 leading-relaxed mb-8">
+                        Welcome to Future Code Technology, your trusted partner in digital transformation and building your business future online. We specialize in website development and e-commerce solutions, delivering fully integrated digital services for businesses across all industries.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="p-6 rounded-lg card-bg">
+                            <h3 class="text-2xl font-semibold text-white mb-2">Vision</h3>
+                            <p class="text-gray-400">To be the leading provider of innovative digital solutions in the region.</p>
+                        </div>
+                        <div class="p-6 rounded-lg card-bg">
+                            <h3 class="text-2xl font-semibold text-white mb-2">Mission</h3>
+                            <p class="text-gray-400">To empower businesses with reliable, creative, and results-driven digital solutions that drive growth and ensure customer satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 section-title mx-auto">Why Choose Future Code Technology</h2>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="card-bg p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:-translate-y-2">
+                        <div class="text-indigo-400 text-4xl mb-4"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Innovative Solutions</h3>
+                        <p class="text-gray-400">We use the latest cutting-edge technologies to create innovative digital solutions.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:-translate-y-2">
+                        <div class="text-indigo-400 text-4xl mb-4"><i class="fas fa-store"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">E-commerce Expertise</h3>
+                        <p class="text-gray-400">Our expertise covers the entire e-commerce journey, from concept to successful launch.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:-translate-y-2">
+                        <div class="text-indigo-400 text-4xl mb-4"><i class="fas fa-headset"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Continuous Support</h3>
+                        <p class="text-gray-400">We provide continuous technical and consultancy support to ensure your project's success.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:-translate-y-2">
+                        <div class="text-indigo-400 text-4xl mb-4"><i class="fas fa-award"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Proven Track Record</h3>
+                        <p class="text-gray-400">We have a proven track record of delivering excellence with clients both in Egypt and abroad.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-lg shadow-lg hover:shadow-xl transform transition-all duration-300 hover:-translate-y-2">
+                        <div class="text-indigo-400 text-4xl mb-4"><i class="fas fa-users"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Professional Team</h3>
+                        <p class="text-gray-400">Our creative and professional team is dedicated to delivering excellence in every project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 section-title mx-auto">Our Services</h2>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="card-bg p-8 rounded-lg shadow-lg">
+                        <div class="text-indigo-400 text-5xl mb-4"><i class="fas fa-globe"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Website Development</h3>
+                        <p class="text-gray-400">Professional, responsive, and high-performance websites tailored to your needs.</p>
+                    </div>
+                    <div class="card-bg p-8 rounded-lg shadow-lg">
+                        <div class="text-indigo-400 text-5xl mb-4"><i class="fas fa-shopping-cart"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">E-commerce Solutions</h3>
+                        <p class="text-gray-400">Complete online store systems with easy management and a seamless user experience.</p>
+                    </div>
+                    <div class="card-bg p-8 rounded-lg shadow-lg">
+                        <div class="text-indigo-400 text-5xl mb-4"><i class="fas fa-paint-brush"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">UI/UX Design</h3>
+                        <p class="text-gray-400">Attractive and user-friendly interfaces that ensure a great experience for your customers.</p>
+                    </div>
+                    <div class="card-bg p-8 rounded-lg shadow-lg">
+                        <div class="text-indigo-400 text-5xl mb-4"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Digital Consultancy</h3>
+                        <p class="text-gray-400">Tailored solutions and expert guidance to help your business achieve success and growth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 section-title mx-auto">Our Offers</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="card-bg p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-white mb-2">Free Consultation</h3>
+                        <p class="text-gray-400">Get a free 1-hour consultation with our experts to discuss your project.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-white mb-2">Free Audit</h3>
+                        <p class="text-gray-400">Receive a free website or e-commerce audit to identify areas for improvement.</p>
+                    </div>
+                    <div class="card-bg p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-white mb-2">Special Discounts</h3>
+                        <p class="text-gray-400">Special discounts are available for large projects or annual contracts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center section-title mx-auto">Contact Us</h2>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/2 p-8 contact-form-bg rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold text-white mb-4">Get in Touch</h3>
+                            <p class="text-gray-400 mb-6">
+                                We'd love to hear from you. Fill out the form below or reach out to us using the contact information on the right.
+                            </p>
+                            <form>
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-400 text-sm font-medium mb-2">Name</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-400 text-sm font-medium mb-2">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="block text-gray-400 text-sm font-medium mb-2">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">Send Message</button>
+                            </form>
+                        </div>
+
+                        <div class="md:w-1/2 p-8 card-bg rounded-lg shadow-lg">
+                            <h3 class="text-2xl font-bold text-white mb-4">Contact Information</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-center space-x-3">
+                                    <i class="fas fa-map-marker-alt text-indigo-400 text-xl"></i>
+                                    <span class="text-gray-400">Location: Egypt</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i class="fas fa-phone text-indigo-400 text-xl"></i>
+                                    <a href="tel:+201061950798" class="text-gray-400 hover:text-white transition duration-300">+20 106 195 0798</a>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <i class="fas fa-envelope text-indigo-400 text-xl"></i>
+                                    <a href="mailto:tfuturecode@gmail.com" class="text-gray-400 hover:text-white transition duration-300">tfuturecode@gmail.com</a>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <h4 class="text-xl font-semibold text-white mb-4">Follow Us</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300"><i class="fab fa-facebook-f text-2xl"></i></a>
+                                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                                    <a href="#" class="text-gray-400 hover:text-indigo-400 transition duration-300"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-8 text-center text-gray-500">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Future Code Technology. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Get the target element by its ID
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start' // Ensure the section starts at the top of the viewport
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
